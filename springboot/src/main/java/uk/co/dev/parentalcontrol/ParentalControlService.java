@@ -29,7 +29,7 @@ public class ParentalControlService implements IParentalControlService {
 	}
 
 	@RequestMapping(path = "/api/movie", consumes = MediaType.APPLICATION_JSON_VALUE, method = RequestMethod.POST)
-	public ResponseEntity<Movie> canWatch(@RequestBody Movie movieId) {
+	public ResponseEntity<Movie> createMovie(@RequestBody Movie movieId) {
 		movieService.saveMovie(movieId);
 		return new ResponseEntity<Movie>(HttpStatus.CREATED);
 	}

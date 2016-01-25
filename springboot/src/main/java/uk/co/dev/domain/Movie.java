@@ -7,6 +7,16 @@ import javax.persistence.Id;
 @Entity
 public class Movie {
 
+	public Movie(String moviename, String rating) {
+		super();
+		this.moviename = moviename;
+		this.rating = rating;
+	}
+
+	public Movie() {
+		super();
+	}
+
 	@Override
 	public String toString() {
 		return "Movie [id=" + id + ", name=" + moviename + ", rating=" + rating
