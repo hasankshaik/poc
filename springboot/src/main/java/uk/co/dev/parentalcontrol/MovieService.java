@@ -18,7 +18,10 @@ public class MovieService implements IMovieService {
 	public String getParentalControlLevel(String name)
 			throws TitleNotFoundException, TechnicalFailureException {
 		movieRepository.findAll().stream().forEach(System.out::println);
-		return movieRepository.findByMoviename(name).stream().findFirst().get().getRating();
+		if (movieRepository.findByMoviename(name).isEmpty())
+			return ParentalControlLevel.U.getRating();
+		return movieRepository.findByMoviename(name).stream().findFirst().get()
+				.getRating();
 
 	}
 
