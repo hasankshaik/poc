@@ -12,6 +12,8 @@ import org.springframework.http.MediaType;
 import org.springframework.test.web.servlet.MvcResult;
 import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
 
+import uk.co.dev.parentalcontrol.base.AbstractControllerTest;
+
 @Transactional
 public class MockRestControllerTest extends AbstractControllerTest {
 

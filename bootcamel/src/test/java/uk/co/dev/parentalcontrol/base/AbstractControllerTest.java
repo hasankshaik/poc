@@ -1,4 +1,4 @@
-package uk.co.dev.parentalcontrol;
+package uk.co.dev.parentalcontrol.base;
 
 import java.io.IOException;
 

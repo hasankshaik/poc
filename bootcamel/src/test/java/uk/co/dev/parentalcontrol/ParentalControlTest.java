@@ -8,6 +8,7 @@ import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import uk.co.dev.domain.Movie;
+import uk.co.dev.parentalcontrol.base.AbstractTest;
 
 @Transactional
 public class ParentalControlTest extends AbstractTest {

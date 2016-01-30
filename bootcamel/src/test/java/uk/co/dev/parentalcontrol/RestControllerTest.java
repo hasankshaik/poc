@@ -4,11 +4,14 @@ import javax.transaction.Transactional;
 
 import org.junit.Assert;
 import org.junit.Before;
+import org.junit.Ignore;
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
 import org.springframework.test.web.servlet.MvcResult;
 import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
+
+import uk.co.dev.parentalcontrol.base.AbstractControllerTest;
 
 @Transactional
 public class RestControllerTest extends AbstractControllerTest {
@@ -22,6 +25,7 @@ public class RestControllerTest extends AbstractControllerTest {
 	}
 
 	@Test
+	@Ignore
 	public void test() throws Exception {
 		
 		String uri = "/api/canwatch/{movieId}";
