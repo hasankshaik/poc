@@ -1,7 +1,5 @@
 package uk.co.dev.parentalcontrol;
 
-import static org.junit.Assert.*;
-
 import javax.transaction.Transactional;
 
 import org.junit.Assert;
@@ -16,7 +14,7 @@ import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
 public class RestControllerTest extends AbstractControllerTest {
 
 	@Autowired
-	ParentalControlService parentalControlService;
+	MovieRestControl parentalControlService;
 
 	@Before
 	public void setUp() {

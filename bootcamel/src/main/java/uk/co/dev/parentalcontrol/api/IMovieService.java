@@ -1,12 +1,15 @@
-package uk.co.dev.parentalcontrol;
+package uk.co.dev.parentalcontrol.api;
 
 import uk.co.dev.domain.Movie;
 import uk.co.dev.exceptions.TechnicalFailureException;
 import uk.co.dev.exceptions.TitleNotFoundException;
 
 public interface IMovieService {
-	String getParentalControlLevel(String movieId)
-			throws TitleNotFoundException, TechnicalFailureException;
-
 	void saveMovie(Movie movie);
+
+	Movie getMovie(Long movie);
+
+	void updateMovie(Movie movie);
+
+	void deleteMovie(Long movie);
 }
