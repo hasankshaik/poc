@@ -1,11 +1,15 @@
 package uk.co.dev.domain;
 
+import java.io.Serializable;
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 
+import uk.co.dev.response.MovieVO;
+
 @Entity
-public class Movie {
+public class Movie implements Serializable{
 
 	public Movie(String moviename, String rating) {
 		super();
@@ -23,17 +27,16 @@ public class Movie {
 				+ "]";
 	}
 
-	private long id;
+	private String id;
 	private String moviename;
 	private String rating;
 
 	@Id
-	@GeneratedValue
-	public long getId() {
+	public String getId() {
 		return id;
 	}
 
-	public void setId(long id) {
+	public void setId(String id) {
 		this.id = id;
 	}
 
@@ -53,5 +56,6 @@ public class Movie {
 	public void setRating(String rating) {
 		this.rating = rating;
 	}
+	
 
 }

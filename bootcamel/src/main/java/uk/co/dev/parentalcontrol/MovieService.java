@@ -1,5 +1,7 @@
 package uk.co.dev.parentalcontrol;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -20,7 +22,7 @@ public class MovieService implements IMovieService {
 	}
 
 	@Override
-	public Movie getMovie(Long movie) {
+	public Movie getMovie(String movie) {
 		return movieRepository.getOne(movie);
 	}
 
@@ -33,10 +35,15 @@ public class MovieService implements IMovieService {
 	}
 
 	@Override
-	public void deleteMovie(Long movie) {
+	public void deleteMovie(String movie) {
 		if (getMovie(movie) == null) {
 			throw new RuntimeException("Cannot delete");
 		}
 		movieRepository.delete(movie);
+	}
+	
+	@Override
+	public List<Movie> findAllMovie() {
+		return movieRepository.findAll();
 	}
 }
