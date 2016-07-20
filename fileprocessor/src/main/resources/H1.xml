@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<documents xsi:noNamespaceSchemaLocation="HDocumentSchema.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <document type="H">
+    <pnldref>H1</pnldref>
+    <english>
+      <title>EMPTY TEMPLATE FOR USE WHERE A STANDARD OFFENCE WORDING IS NOT AVAILABLE,</title>
+      <additionalkeywords>
+        <additionalkeyword>blank</additionalkeyword>
+        <additionalkeyword>new</additionalkeyword>
+        <additionalkeyword>missing</additionalkeyword>
+      </additionalkeywords>
+      <standardoffencewording>On **(..SPECIFY DATE..) at **(..SPECIFY TOWNSHIP..) **(..SPECIFY    THE DETAILS OF THE OFFENCE..)</standardoffencewording>
+      <legislation>CONTRARY TO **(..SPECIFY THE SECTION/REGULATION/ORDER/ARTICLE    CONTRAVENED..)</legislation>
+      <investigatoractions>
+        <investigatoraction>
+          <code>IA27</code>
+          <description>Confirm proposed charge is appropriately authorised (Police or CPS)</description>
+        </investigatoraction>
+        <investigatoraction>
+          <code>IA28</code>
+          <description>Ensure compliance with investigator's obligations re disclosure</description>
+        </investigatoraction>
+        <investigatoraction>
+          <code>IA29</code>
+          <description>Consider if case suitable for referral to Financial Investigation Unit and CPS for asset recovery eg confiscation order</description>
+        </investigatoraction>
+      </investigatoractions>
+      <policeandcpschargingresponsibilities>D27968</policeandcpschargingresponsibilities>
+      <notes>This CJS Code and Offence wording document is now OBSOLETE. Revoked at the request of M.O.J . No longer required.(i) This blank Offence Wording document is made available to assist operational officers and custody suite users to generate an offence wording on the rare occasions when a Standard Offence Wording document is unavailable through a custody suite menu.&lt;br /&gt;(ii) However, the correct and valid CJS Code MUST BE IDENTIFIED and INSERTED into this document at the appropriate place to replace the dummy CJS Code XX99001 already displayed. Failure to insert the correct CJS code will result, on submission, of the transfer of incorrect data to the Case Preparation application, Crown Prosecution Service and ultimately the Courts.</notes>
+    </english>
+    <indictment>
+      <indictmentindicator>
+        <code>N</code>
+        <description>No</description>
+      </indictmentindicator>
+      <structuredindictmentindicator>
+        <code>N</code>
+        <description>No</description>
+      </structuredindictmentindicator>
+    </indictment>
+    <codes>
+      <cjsoffencecode>XX99001</cjsoffencecode>
+      <recordableonpncindicator>
+        <code>N</code>
+        <description>No</description>
+      </recordableonpncindicator>
+      <pncacpooffencecode>0.0.0.0</pncacpooffencecode>
+      <notifiabletomoj>
+        <code>N</code>
+        <description>No</description>
+      </notifiabletomoj>
+      <mojstatscode>000/00</mojstatscode>
+      <mopireviewgroup>
+        <code>C</code>
+        <description>Group 3</description>
+      </mopireviewgroup>
+      <mopinoteslink>D19586</mopinoteslink>
+      <disqualificationclass>
+        <code>N</code>
+        <description>discretionary disqualification not endorsable</description>
+      </disqualificationclass>
+      <seatbeltoffence>
+        <code>N</code>
+        <description>No</description>
+      </seatbeltoffence>
+      <fptissuedbypolice>0.00</fptissuedbypolice>
+      <fptgraduated>0.00</fptgraduated>
+      <fptgraduatedhigh>0.00</fptgraduatedhigh>
+      <pndissuedbypolice>0.00</pndissuedbypolice>
+      <pndissuedbylocalauthorities>0.00</pndissuedbylocalauthorities>
+      <pndissuedbyothers>0.00</pndissuedbyothers>
+      <roadsidedeposits>
+        <code>N</code>
+        <description>No</description>
+      </roadsidedeposits>
+    </codes>
+    <ancillary>
+      <offencestartdate>2005-09-01</offencestartdate>
+      <offenceenddate>2013-02-28</offenceenddate>
+      <datecreated>2005-09-01</datecreated>
+      <auditofamendments>240113 Obsolete - at request of M.O.J . No longer required.</auditofamendments>
+      <lastupdate>03/04/13 Obsolete - at request of M.O.J . No longer required.</lastupdate>
+      <dateoflastupdate>2013-04-03</dateoflastupdate>
+      <groups>
+        <code>GM10</code>
+        <description>Miscellaneous</description>
+      </groups>
+    </ancillary>
+  </document>
+</documents>
