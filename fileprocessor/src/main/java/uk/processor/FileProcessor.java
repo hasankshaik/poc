@@ -34,8 +34,8 @@ public class FileProcessor {
     private static final String PNLD_DATA_FILES_LOCATION = resource + "H1.xml";
 
     public static void main(String... args) throws Exception {
-        // readFromZip();
-        new FileProcessor().parseAndValidatePnld();
+        readFromZip();
+        // new FileProcessor().parseAndValidatePnld();
     }
 
     private final ClassLoader classLoader = getClass().getClassLoader();
@@ -91,27 +91,20 @@ public class FileProcessor {
         byte[] data = Files.readAllBytes(Paths.get(fileName));
         final String encoded = Base64.getEncoder().encodeToString(data);
         // System.out.println(" => " + encoded);
-        System.out.println("====================================================");
         byte[] decode = Base64.getDecoder().decode(encoded);
         InputStream myInputStream = new ByteArrayInputStream(decode);
-        ZipInputStream zis = new ZipInputStream(myInputStream);
+        ZipInputStream zin = new ZipInputStream(myInputStream);
 
-        ZipEntry entry;
-        while ((entry = zis.getNextEntry()) != null) {
-            System.out.println("entry: " + entry.getName() + ", " + entry.getSize());
-            while (zis.available() > 0) {
-                if (!entry.isDirectory()) {
-                    int n;
-                    byte[] buffer = new byte[4096];
-                    zis.read(buffer);
-                    String fileString = new String(buffer, "UTF-8");
-                    System.out.println(fileString);
-
-                } else {
-                    zis.read();
+        ZipEntry ze;
+        while ((ze = zin.getNextEntry()) != null) {
+            if (!ze.isDirectory()) {
+                System.out.println("======== Unzipping == " + ze.getName());
+                for (int c = zin.read(); c != -1; c = zin.read()) {
+                    System.out.write(c);
                 }
-
             }
+            zin.closeEntry();
         }
+        zin.close();
     }
 }
