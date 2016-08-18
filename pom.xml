@@ -8,7 +8,7 @@
   	<module>jsonparsing</module>
   	<module>wiremock</module>
   	<module>hasanshaik</module>
-  	<module>feature</module>
+  	
   	<module>fileprocessor</module>
   </modules>
 </project>
