@@ -4,4 +4,11 @@
   <version>0.0.1-SNAPSHOT</version>
   <groupId>com.poc</groupId>
   <packaging>pom</packaging>
+  <modules>
+  	<module>jsonparsing</module>
+  	<module>wiremock</module>
+  	<module>hasanshaik</module>
+  	<module>feature</module>
+  	<module>fileprocessor</module>
+  </modules>
 </project>
